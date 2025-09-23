@@ -3,11 +3,9 @@ module circuit_a(
     input B,
     input C,
     input D,
-    output Y,
-    output Z
+    output Y
 );
 
-    assign Y = D | A;
-    assign Z = Y;
+    assign Y = D & ~A;
     
 endmodule
